@@ -2,31 +2,37 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>激動 Middle Rank 大会</title>
+<title>激動 Middle Rank</title>
+
 <style>
 body {
-    font-family: "Segoe UI", sans-serif;
-    background-color: #0f172a;
-    color: #e5e7eb;
     margin: 0;
-    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    color: white;
+
+    /* 背景画像ここ！！ */
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 黒の半透明で読みやすく */
+.overlay {
+    background-color: rgba(0,0,0,0.7);
+    min-height: 100vh;
 }
 
 header {
-    background: linear-gradient(90deg, #7c3aed, #2563eb);
-    padding: 30px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    padding: 40px;
+    background: linear-gradient(90deg, #7c3aed, #2563eb);
 }
 
 section {
+    margin: 20px auto;
     padding: 20px;
-    margin: 20px;
-    background-color: #1e293b;
+    width: 90%;
+    max-width: 900px;
+    background-color: rgba(30, 41, 59, 0.9);
     border-radius: 10px;
 }
 
@@ -35,131 +41,77 @@ h2 {
     padding-left: 10px;
 }
 
-ul {
-    line-height: 1.8;
-}
-
-.notice {
-    background-color: #7f1d1d;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.tag {
+.btn {
     display: inline-block;
-    background-color: #2563eb;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
+    padding: 15px 25px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #16a34a;
 }
 </style>
+
 </head>
 
 <body>
 
+<div class="overlay">
+
 <header>
     <h1>激動 Middle Rank</h1>
-    <p>非公式 VALORANT eスポーツ大会</p>
+    <p>非公式 VALORANT大会</p>
 </header>
 
 <section>
-<h2>大会概要</h2>
-<p>本大会はライアットゲームズおよびVALORANT eスポーツとは提携しておらず、資金提供も受けていません。</p>
+<h2>大会紹介</h2>
+
+<!-- X埋め込み -->
+<blockquote class="twitter-tweet">
+<a href="https://x.com/GekidoOfficial/status/2040625473433092310"></a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js"></script>
+
 </section>
 
 <section>
 <h2>大会日程</h2>
 <ul>
-<li>2026/06/13（土）20:00開始（19:00エントリー） - リーグ戦</li>
-<li>2026/06/14（日）20:00開始（19:00エントリー） - トーナメント戦</li>
+<li>6/13（土）リーグ戦</li>
+<li>6/14（日）トーナメント</li>
 </ul>
 </section>
 
 <section>
-<h2>参加要件</h2>
+<h2>参加条件</h2>
 <ul>
-<li>ゴールド〜アセンダントのプレイヤー</li>
-<li>アカウントレベル30以上</li>
-<li>サブアカウント禁止</li>
-<li>過去にアカウント停止歴がないこと</li>
-<li>行動規範を遵守していること</li>
-<li>チーム条件を満たしていること</li>
+<li>ゴールド〜アセンダント</li>
+<li>サブ垢禁止</li>
+<li>レベル30以上</li>
 </ul>
 </section>
 
 <section>
-<h2>チーム条件</h2>
-<ul>
-<li>招待枠：SNS合計10000 または 登録者5000</li>
-<li>一般枠：SNS10000 または 登録者5000</li>
-<li>常に連絡が取れるメンバーがいること</li>
-</ul>
-</section>
+<h2>エントリー</h2>
+<p>大会への参加はこちらから👇</p>
 
-<section>
-<h2>大会形式</h2>
-<p>32チーム参加</p>
+<a class="btn" href="https://t.co/mAU4CUXwba" target="_blank">
+申し込みフォームへ
+</a>
 
-<h3>1日目</h3>
-<ul>
-<li>4チーム×8リーグ</li>
-<li>総当たり戦（3試合）</li>
-<li>各リーグ1位が進出</li>
-</ul>
-
-<h3>2日目</h3>
-<ul>
-<li>トーナメント形式</li>
-<li>決勝・3位決定戦はBO3</li>
-</ul>
-</section>
-
-<section>
-<h2>ルール</h2>
-<ul>
-<li>リーグ戦はOTなし（13ラウンド先取）</li>
-<li>同率時は得失点差 → 直接対決</li>
-<li>マップはダイスでBAN方式</li>
-</ul>
-</section>
-
-<section class="notice">
-<h2>禁止事項</h2>
-<ul>
-<li>煽り行為（死体撃ち・屈伸など）</li>
-<li>サブアカウント使用</li>
-<li>チート・バグ利用</li>
-<li>SNSでの批判行為</li>
-</ul>
-<p>違反者は大会から永久BANされる可能性があります。</p>
-</section>
-
-<section>
-<h2>配信について</h2>
-<ul>
-<li>各チーム2人以上配信必須</li>
-<li>遅延は任意</li>
-</ul>
-</section>
-
-<section>
-<h2>使用マップ</h2>
-<ul>
-<li>アセント</li>
-<li>カロード</li>
-<li>ロータス</li>
-</ul>
 </section>
 
 <section>
 <h2>ハッシュタグ</h2>
-<span class="tag">#激動VALO</span>
-<span class="tag">#激動clip</span>
+<p>#激動VALO #激動clip</p>
 </section>
 
-<footer style="text-align:center; padding:20px;">
-<p>© 激動 Middle Rank</p>
-</footer>
+</div>
 
 </body>
 </html>
