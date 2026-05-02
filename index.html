@@ -5,55 +5,90 @@
 <title>激動 Middle Rank</title>
 
 <style>
+/* ===== 全体 ===== */
 body {
     margin: 0;
-    font-family: "Segoe UI", sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     color: white;
-
-    /* 背景画像ここ！！ */
-    background: url("background.png") no-repeat center center fixed;
-    background-size: cover;
+    background: url("background.jpg") no-repeat center/cover fixed;
 }
 
-/* 黒の半透明で読みやすく */
+/* 暗いオーバーレイ */
 .overlay {
-    background-color: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.75);
     min-height: 100vh;
 }
 
+/* ===== ヘッダー ===== */
 header {
     text-align: center;
-    padding: 40px;
-    background: linear-gradient(90deg, #7c3aed, #2563eb);
+    padding: 60px 20px;
 }
 
+header h1 {
+    font-size: 3em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ff4655;
+    text-shadow: 0 0 15px #ff4655;
+}
+
+header p {
+    color: #aaa;
+}
+
+/* ===== セクション ===== */
 section {
-    margin: 20px auto;
-    padding: 20px;
-    width: 90%;
     max-width: 900px;
-    background-color: rgba(30, 41, 59, 0.9);
-    border-radius: 10px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(20,20,30,0.85);
+    border: 1px solid rgba(255,70,85,0.3);
+    border-radius: 12px;
+
+    animation: fadeIn 1s ease;
 }
 
+/* 見出し */
 h2 {
-    border-left: 5px solid #7c3aed;
+    border-left: 4px solid #ff4655;
     padding-left: 10px;
 }
 
+/* ===== ボタン ===== */
 .btn {
     display: inline-block;
-    padding: 15px 25px;
-    background: #22c55e;
+    padding: 15px 30px;
+    background: #ff4655;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
     font-weight: bold;
-    margin-top: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+
+    box-shadow: 0 0 10px #ff4655;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #16a34a;
+    background: #ff1e33;
+    box-shadow: 0 0 20px #ff4655;
+    transform: scale(1.05);
+}
+
+/* ===== タグ ===== */
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px;
+    background: #2563eb;
+    border-radius: 6px;
+}
+
+/* ===== アニメーション ===== */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
 }
 </style>
 
@@ -65,13 +100,12 @@ h2 {
 
 <header>
     <h1>激動 Middle Rank</h1>
-    <p>非公式 VALORANT大会</p>
+    <p>非公式 VALORANT eスポーツ大会</p>
 </header>
 
 <section>
 <h2>大会紹介</h2>
 
-<!-- X埋め込み -->
 <blockquote class="twitter-tweet">
 <a href="https://x.com/GekidoOfficial/status/2040625473433092310"></a>
 </blockquote>
@@ -91,24 +125,34 @@ h2 {
 <h2>参加条件</h2>
 <ul>
 <li>ゴールド〜アセンダント</li>
-<li>サブ垢禁止</li>
+<li>サブアカウント禁止</li>
 <li>レベル30以上</li>
 </ul>
 </section>
 
 <section>
+<h2>大会形式</h2>
+<ul>
+<li>32チーム参加</li>
+<li>リーグ → トーナメント</li>
+<li>決勝はBO3</li>
+</ul>
+</section>
+
+<section>
 <h2>エントリー</h2>
-<p>大会への参加はこちらから👇</p>
+<p>参加はこちら</p>
 
 <a class="btn" href="https://t.co/mAU4CUXwba" target="_blank">
-申し込みフォームへ
+ENTRY
 </a>
 
 </section>
 
 <section>
 <h2>ハッシュタグ</h2>
-<p>#激動VALO #激動clip</p>
+<span class="tag">#激動VALO</span>
+<span class="tag">#激動clip</span>
 </section>
 
 </div>
